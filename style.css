@@ -1,0 +1,358 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&display=swap');
+
+/* Обнуление стилей */
+*{padding: 0px;margin: 0px;border: 0px;}
+ul li{list-style: none;}
+a, a:visited{text-decoration: none;}
+a:focus,a:active{outline: none;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
+
+/* body */
+body{
+	font-family: "Raleway";
+}
+
+/* container */
+.container{
+	max-width:1100px;
+	margin: 0 auto;
+	width: 100%;
+}
+	@media screen and (max-width: 779px) {
+		.container {
+			width: 100%;
+		}
+	}
+/* Общие классы */
+.title {
+	font-family: "Merriweather";
+	font-weight: 700;
+	font-size: 40px;
+	position: relative;
+}
+.title::after{
+	content: "";
+	position: absolute;
+	top: 60px;
+   left: 50%;
+	width: 150px;
+	height: 3px;
+	margin: 0px 0px 0px -75px;
+	background-color: #000;
+}
+.block {
+	background-color: #17C2A4;
+	text-align: center;
+	padding: 60px 10px;
+}
+	@media screen and (max-width: 450px) {
+		.block {
+		padding: 20px 10px;
+		}
+	}
+
+/* header */
+.header{
+	background-color: #824153;
+	height: 70px;
+	padding: 0px 15px;
+	align-items: center;
+	display: flex;
+}
+	@media screen and (max-width: 779px) {
+		.header {
+			height: 200px;
+		}
+	}
+.header__list {
+	display: flex;
+	justify-content: space-between;
+}
+	@media screen and (max-width: 779px) {
+		.header__list {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	@media screen and (max-width: 779px) {
+		.header__link {
+			display: inline-block;
+			margin: 0px 0px 10px 0px;
+		}
+	}
+.header__link span {
+	color: #fff;
+	position: relative;
+}
+.header__link span:hover {
+	color: #A4BBAC;
+	transition-duration: 0.3s;
+}
+.header__link span::after {
+	position: absolute;
+	content: "";
+	left: 49.998%;
+	width: 0px;
+	height: 1px;
+	background-color: #A4BBAC;
+	top: 22px;
+	transition-duration: 0.3s;
+}
+.header__link span:hover::after{
+	left: 0px;
+	width: 100%;
+}
+
+/* main self */
+.self {
+	background-color: #DDDC74;
+	text-align: center;
+	padding: 60px 0px 100px;
+}
+	@media screen and (max-width: 450px) {
+		.self {
+			padding: 30px 0px 60px;
+		}
+	}
+.self__title {
+	font-family: "Merriweather";
+	font-weight: 700;
+	font-size: 50px;
+	margin: 0px 0px 20px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.self__title {
+			font-size: 30px;
+		}
+	}
+.self__subtitle {
+	font-family: "Merriweather";
+	font-weight: 400;
+	font-style: italic;
+	font-size: 30px;
+	margin: 0px 0px 40px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.self__subtitle {
+			font-size: 20px;
+		}
+	}
+.self__image {
+	width: 700px;
+	border-radius: 10px;
+}
+	@media screen and (max-width: 779px) {
+		.self__image {
+			max-width: 100%;
+		}
+	}
+	@media screen and (max-width: 700px) {
+		.self__image {
+		border-radius: 0;
+		}
+	}
+
+/* main about */
+.about {
+	padding-top: 80px;
+}
+	@media screen and (max-width: 450px) {
+		.about {
+			padding-top: 30px;
+		}
+	}
+.about__title {
+	margin: 0px 0px 50px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.about__title {
+			font-size: 30px;
+		}
+	}
+.about__text {
+	font-size: 25px;
+}
+	@media screen and (max-width: 450px) {
+		.about__text {
+			font-size: 20px;
+		}
+	}
+
+/* main education */
+.education__title {
+	margin: 0px 0px 50px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.education__title {
+			font-size: 30px;
+		}
+	}
+.education__text {
+	font-size: 25px;
+	margin: 0px 0px 20px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.education__text {
+			font-size: 20px;
+		}
+	}
+
+/* main experience */
+.experience__title {
+	margin: 0px 0px 50px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.experience__title {
+			font-size: 30px;
+		}
+	}
+.experience__text {
+	font-size: 25px;
+}
+	@media screen and (max-width: 450px) {
+		.experience__text {
+			font-size: 20px;
+		}
+	}
+
+/* main hobby */
+.hobby__title {
+	margin: 0px 0px 50px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.hobby__title {
+			font-size: 30px;
+		}
+	}
+.hobby__text {
+	font-size: 25px;
+	margin: 0px 0px 20px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.hobby__text{
+			font-size: 20px;
+		}
+	}
+
+/* main developer */
+.developer__title {
+	margin: 0px 0px 50px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.developer__title {
+			font-size: 30px;
+		}
+	}
+	@media screen and (max-width: 746px) {
+		.developer__title::after{
+			content: "";
+			position: absolute;
+			top: 118px;
+			left: 50%;
+			width: 150px;
+			height: 3px;
+			margin: 0px 0px 0px -75px;
+			background-color: #000;
+		}
+	}
+	@media screen and (max-width: 450px) {
+		.developer__title::after{
+			top: 100px;
+		}
+	}
+.developer__list {
+	font-size: 25px;
+}
+	@media screen and (max-width: 450px) {
+		.developer__list {
+			font-size: 18px;
+		}
+	}
+.developer__item {
+	margin: 0px 0px 20px 0px;
+}
+.developer__item span {
+	color: #C6080B;
+	font-weight: 600;
+}
+
+/* footer */
+.footer {
+	background-color: #824153;
+	color: #fff;
+	text-align: center;
+	padding: 30px 0px;
+}
+.footer__title {
+	font-family: "Merriweather";;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0px 0px 25px 0px;
+}
+.footer__row {
+	display: flex;
+	justify-content: center;
+}
+	@media screen and (max-width: 779px) {
+		.footer__row {
+		flex-direction: column;
+		}
+	}
+.footer__column {
+	font-size: 20px;
+	padding: 0px 80px;
+}
+	@media screen and (max-width: 779px) {
+		.footer__column {
+			margin: 0px 0px 30px 0px;
+		}
+		.footer__column:last-child{
+			margin: 0px;
+		}
+	}
+	@media screen and (max-width: 385px) {
+		.footer__column {
+			padding: 0px 15px;
+		}
+	}
+.footer__item {
+	text-align: left;
+	margin: 0px 0px 3px 0px;
+}
+	@media screen and (max-width: 779px) {
+		.footer__item {
+			text-align: center;
+		}
+	}
+.footer__link {
+	color: #C6A017;
+}
+	@media screen and (max-width: 450px) {
+		.footer__link {
+			font-size: 15px;
+		}
+	}
+.footer__link:hover {
+	color: #708076;
+	transition-duration: 0.3s;
+}
+.footer__address {
+	margin-top: 16px;
+}
+.footer__post {
+	margin: 0px 0px 4px 0px;
+}
+	@media screen and (max-width: 450px) {
+		.footer__post {
+			font-size: 15px;
+		}
+	}
+.footer__icon {
+	position: relative;
+	top: 6px;
+	margin-right: 5px;
+}
